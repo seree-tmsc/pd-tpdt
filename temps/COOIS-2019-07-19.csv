@@ -1,0 +1,3 @@
+﻿Order,Planning plant,Material Number,Material description,Batch,MRP controller,Order Type,Order quantity (GMEIN),Unit of measure (=GMEIN),Basic start date,Basic finish date,Production Version
+1030249,RB11,RKA731300-BX000020,ACRYLAX-7313,CG9006,F02,PP01,"1,200.000",KG,19-07-19,19-07-19,0001
+1030268,RB11,ENGAL9039-BLK01000,ALMATEX-A-9039,CF9007,F02,PP01,"5,000.000",KG,19-07-19,19-07-19,0001

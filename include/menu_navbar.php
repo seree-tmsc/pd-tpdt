@@ -1,0 +1,173 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" 
+                class="navbar-toggle collapsed" 
+                data-toggle="collapse" 
+                data-target="#navbar" 
+                aria-expanded="false" 
+                aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>            
+            <img src="images/tmsc-logo-96x48.png" style="display: block;margin-left: auto;margin-right: auto;">
+            <!--<img src="images/tmsc-logo-96x48.png" alt="user image" class="offline">-->
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="pMain.php">
+                        <span class="fa fa-home fa-lg" style="color:ForestGreen"></span>
+                        Home
+                    </a>                            
+                </li>                
+            </ul>
+
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-cloud-upload fa-lg" style="color:blue"></span> 
+                        Uploading
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="pUpload_COOIS.php" >
+                                <span class="fa fa-cloud-upload" style="color:DeepSkyBlue"></span> 
+                                Upload Data from GSE [COOIS]
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-wrench fa-lg" style="color:blue"></span>                         
+                        Maintaining
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="pMA_PDLT.php">
+                                <span class='fa fa-wrench' style="color:DeepSkyBlue"></span>
+                                Maiaintaining Production Lead Time
+                            </a>
+                        </li>
+                        <li class="divider">
+                        <li>
+                            <a href="pPDSCH_B_Main.php">
+                                <span class='fa fa-wrench' style="color:DeepSkyBlue"></span>
+                                Rev. Basic Start Time [Planning Start Time]
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pPDSCH_A_Main.php">
+                                <span class='fa fa-wrench' style="color:DeepSkyBlue"></span>
+                                Rev. Actual Start Time
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pPDSCH_AF_Main.php">
+                                <span class='fa fa-wrench' style="color:DeepSkyBlue"></span>
+                                Rev. Actual Finish Time
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>            
+
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-area-chart fa-lg" style="color:blue"></span> 
+                        Monitoring
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="pTPDT.php" target="_blank">
+                                <span class='fa fa-area-chart' style="color:DeepSkyBlue"></span>
+                                Traking Production Time Daily
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pTPDT_By_Month.php" target="_blank">
+                                <span class='fa fa-area-chart' style="color:DeepSkyBlue"></span>
+                                Traking Production Time Monthly
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-newspaper-o fa-lg" style="color:blue"></span> 
+                        Reporting
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="pPrint_ReportA.php">
+                                <span class='fa fa-newspaper-o' style="color:DeepSkyBlue"></span>
+                                Production Monthly Report
+                            </a>
+                        </li>                        
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-cog fa-spin fa-lg" style="color:blue"></span> 
+                        Setting
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="pMA_User.php">
+                                <span class='fa fa-users' style="color:DeepSkyBlue"></span>
+                                Maintain User-ID
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">                        
+                        <img src="<?php echo $user_picture?>" style="margin-top: -10px; border-radius: 50%;">
+                        Login as ... <?php //echo date('d / M / Y - H:i');?>
+                        <!--<br>-->
+                        <?php echo $_SESSION["ses_email"];?> 
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>                                
+                            <a href="#" data-toggle="modal" data-target="#chgpasswordModal">
+                                <span class='fa fa-pencil-square-o fa-lg' style="color:PeachPuff"></span> 
+                                Change Password
+                            </a>
+                        </li>
+                        <li class="divider">
+                        </li>
+                        <li>                                
+                            <a href="#" data-toggle="modal" data-target="#logoutModal">
+                                <span class="fa fa-sign-out fa-lg" style="color:Crimson"></span> 
+                                logout
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
