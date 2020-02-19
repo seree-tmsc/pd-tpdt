@@ -55,6 +55,7 @@
                             <!--<h5>User Data:</h5>-->
                             <?php include "pMA_PDLT_List.php"; ?>
                         </div>
+                        <h1>Upload data complete!</h1>
                     </div>
                     <!-- ----------------------------------- -->
                     <!-- End content page -->

@@ -87,10 +87,10 @@
                                                             $nElement += 1;     
                                                         }                                                    
                                                     }
-
+                                                    
                                                     $strSql .= "GROUP BY upload_date, upload_by, basic_start_date ";
                                                     $strSql .= "ORDER BY upload_date DESC, upload_by, basic_start_date DESC ";
-                                                    $strSql .= "LIMIT 7 ";
+                                                    $strSql .= "LIMIT 25 ";
                                                     //echo $strSql . "<br>";                                                
 
                                                     $statement = $conn->prepare($strSql, array(PDO::ATTR_CURSOR => PDO::CURSOR_SCROLL));
@@ -186,7 +186,7 @@
                                                     $strSql .= ") ";
 
                                                     $strSql .= "GROUP BY `Basic start date` DESC ";
-                                                    $strSql .= "LIMIT 7 ";
+                                                    $strSql .= "LIMIT 25 ";
                                                     //echo $strSql . "<br>";
 
                                                     $statement = $conn->prepare($strSql, array(PDO::ATTR_CURSOR => PDO::CURSOR_SCROLL));
@@ -357,14 +357,9 @@
                     // javascript for side-menu
                     //--------------------------
                     $(document).ready(function () {
-                        /*
-                        $('#right-slide').BootSideMenu({
-                            side: "right",
-                            pushBody: false,
-                            duration:1000,
-                            width:'20%'
+                        $('#myTable').dataTable({
+                            searching: false
                         });
-                        */
                     });
                     
                     var ctx = document.getElementById("barChart1");

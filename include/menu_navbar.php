@@ -55,7 +55,7 @@
                         <li>
                             <a href="pMA_PDLT.php">
                                 <span class='fa fa-wrench' style="color:DeepSkyBlue"></span>
-                                Maiaintaining Production Lead Time
+                                Maintaining Production Lead Time
                             </a>
                         </li>
                         <li class="divider">
@@ -117,6 +117,13 @@
                             <a href="pPrint_ReportA.php">
                                 <span class='fa fa-newspaper-o' style="color:DeepSkyBlue"></span>
                                 Production Monthly Report
+                            </a>
+                        </li>
+                        <li class="divider">
+                        <li>
+                            <a href="pReport_01_criteria.php">
+                                <span class='fa fa-newspaper-o' style="color:DeepSkyBlue"></span>
+                                Detail of production order
                             </a>
                         </li>                        
                     </ul>

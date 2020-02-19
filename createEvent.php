@@ -298,7 +298,7 @@
                             }
                             else
                             {
-                                $e['backgroundColor'] = 'red';
+                                $e['backgroundColor'] = 'Salmon';
                                 $e['textColor'] = 'white';
                             }
                         }
